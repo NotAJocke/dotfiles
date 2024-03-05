@@ -1,0 +1,35 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+yabai -m config \
+  layout bsp \
+  window_placement second_child \
+  top_padding 12 \
+  bottom_padding 12 \
+  left_padding 12 \
+  right_padding 12 \
+  window_gap 12 \
+  window_opacity on \
+  active_window_opacity 0.9 \
+  normal_window_opacity 0.85 \
+  window_animation_duration 0.10 \
+  window_opacity_duration 0.1 \
+  window_shadow off  \
+  mouse_follows_focus on \
+  mouse_modifier alt \
+  mouse_action1 move \
+  mouse_action2 resize \
+  mouse_drop_action swap 
+
+# disables
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^WhisperKeys$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Bitwarden$" manage=off
+# yabai -m rule --add app="^iTerm2$" opacity=1.0
+yabai -m rule --add app="^kitty$" opacity=1.0
+
+yabai -m signal --add event="window_minimized" action="yabai -m window --focus \$(yabai -m query --windows --space | jq -r '.[] | select(.role == \"AXWindow\") | .id' | head -n 1)"
+yabai -m signal --add event="application_hidden" action="yabai -m window --focus \$(yabai -m query --windows --space | jq -r '.[] | select(.role == \"AXWindow\") | .id' | head -n 1)"
+
+borders active_color=0xffFFFFFF inactive_color=0xff494d64 width=5.0 hidpi=on &
