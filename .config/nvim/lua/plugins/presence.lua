@@ -1,5 +1,3 @@
 return {
-  {
-    "andweeb/presence.nvim",
-  },
+  "andweeb/presence.nvim",
 }
