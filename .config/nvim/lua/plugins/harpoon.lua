@@ -12,7 +12,7 @@ return {
       "<leader>ha",
       function()
         local harpoon = require("harpoon")
-        harpoon:list():append()
+        harpoon:list():add()
         vim.notify("Added to Harpoon", "info")
       end,
       desc = "Added to Harpoon",
