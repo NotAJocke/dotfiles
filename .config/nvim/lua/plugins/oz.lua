@@ -9,6 +9,10 @@ return {
   },
   keys = {
     {
+      "<leader>o",
+      "MOzart",
+    },
+    {
       "<leader>of",
       "<cmd>OzFeedFile<CR>",
       desc = "Execute oz file",
