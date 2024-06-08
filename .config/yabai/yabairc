@@ -23,4 +23,4 @@ yabai -m rule --add app="^WhisperKeys$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Bitwarden$" manage=off
 
-borders active_color=0xffDE5056 inactive_color=0xff494d64 width=5.0 &
+borders active_color=0xffDE5056 inactive_color=0xff494d64 width=5.0 hidpi=on &

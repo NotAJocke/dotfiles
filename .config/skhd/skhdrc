@@ -29,7 +29,7 @@ ctrl + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # maximize a window (center key)
 ctrl + alt - 0x24 : yabai -m window --toggle zoom-fullscreen
-
+ctrl + alt + shift - 0x24 : yabai -m window --toggle native-fullscreen
 # balance out tree of windows (resize to occupy same area)
 ctrl + alt - e : yabai -m space --balance
 
