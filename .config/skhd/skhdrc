@@ -74,6 +74,10 @@ ctrl + shift + alt - m : yabai -m config top_padding 12; \
                          yabai -m config left_padding 12; \
                          yabai -m config right_padding 12;
 
+# toggle opacity
+ctrl + alt - o : yabai -m window --opacity 1.0
+ctrl + alt + shift - o : yabai -m window --opacity 0.0
+
 # -- Starting/Stopping/Restarting Yabai --
 
 # stop/start/restart yabai
