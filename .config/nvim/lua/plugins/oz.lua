@@ -1,6 +1,7 @@
 return {
   "luxluth/oz.nvim",
-  lazy = false,
+  lazy = true,
+  ft = "oz",
   opts = {
     ozengine_path = "/Applications/Mozart2.app/Contents/Resources/bin/ozengine",
     keymaps = {
