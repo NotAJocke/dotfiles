@@ -64,6 +64,12 @@ ctrl + alt - 0x15 : yabai -m window --space 4;
 ctrl + alt - 0x17 : yabai -m window --space 5;
 ctrl + alt - 0x16 : yabai -m window --space 6;
 
+# add/remove a space
+# - to remove
+# = to create
+ctrl + alt - 0x2C : yabai -m space --create;
+ctrl + alt - 0x18 : yabai -m space --destroy;
+
 # toggle padding
 ctrl + alt - m : yabai -m config top_padding 60; \
                  yabai -m config bottom_padding 60; \
@@ -75,8 +81,21 @@ ctrl + shift + alt - m : yabai -m config top_padding 12; \
                          yabai -m config right_padding 12;
 
 # toggle opacity
-ctrl + alt - o : yabai -m window --opacity 1.0
-ctrl + alt + shift - o : yabai -m window --opacity 0.0
+ctrl + alt - o : \
+  current_opacity=$(yabai -m query --windows --window | jq '.opacity'); \
+  if [ "$current_opacity" = "1.0000" ]; then \
+    yabai -m window --opacity 0.0; \
+  else \
+    yabai -m window --opacity 1.0; \
+  fi
+
+ctrl + alt + shift - o : \
+  current_opacity=$(yabai -m query --windows --window | jq '.opacity'); \
+  if [ "$current_opacity" = "1.0000" ]; then \
+    yabai -m config window_opacity on; \
+  else \
+    yabai -m config window_opacity off; \
+  fi
 
 # -- Starting/Stopping/Restarting Yabai --
 
