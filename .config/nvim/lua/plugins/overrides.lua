@@ -8,16 +8,6 @@ return {
     enabled = false,
   },
   {
-    "neovim/nvim-lspconfig",
-    opts = {
-      setup = {
-        clangd = function(_, opts)
-          opts.capabilities.offsetEncoding = { "utf-16" }
-        end,
-      },
-    },
-  },
-  {
     "akinsho/bufferline.nvim",
     enabled = false,
   },
@@ -64,6 +54,16 @@ return {
     opts = {
       oldfiles = {
         include_current_session = true,
+      },
+    },
+  },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      styles = {
+        zen = {
+          width = 0,
+        },
       },
     },
   },

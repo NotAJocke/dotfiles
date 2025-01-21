@@ -11,4 +11,11 @@ if vim.g.neovide then
   vim.keymap.set("v", "<D-v>", '"+P') -- Paste visual mode
   vim.keymap.set("c", "<D-v>", "<C-R>+") -- Paste command mode
   vim.keymap.set("i", "<D-v>", '<ESC>l"+Pli') -- Paste insert mode
+
+  vim.g.neovide_transparency = 0.9
+  vim.g.neovide_normal_opacity = 0.9
+  vim.g.neovide_window_blurred = true
+
+  vim.g.neovide_floating_blur_amount_x = 4.0
+  vim.g.neovide_floating_blur_amount_y = 4.0
 end
