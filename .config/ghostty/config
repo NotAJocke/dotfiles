@@ -1,0 +1,21 @@
+theme = rose-pine
+background-blur-radius = 8
+background-opacity = 0.9
+background = 1f1d30
+
+macos-titlebar-style = hidden
+font-size = 14
+font-family = FiraCode Nerd Font Mono
+
+confirm-close-surface = false
+window-decoration = true
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+
+auto-update = check
+
+macos-option-as-alt = right
+
+command = /opt/homebrew/bin/fish
+initial-command = /opt/homebrew/bin/fish

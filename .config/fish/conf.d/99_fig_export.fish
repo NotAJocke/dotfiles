@@ -1,0 +1,1 @@
+/Users/jocke/fig-export/dotfiles/dotfile.fish
