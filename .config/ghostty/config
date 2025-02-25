@@ -3,7 +3,18 @@ background-blur-radius = 8
 background-opacity = 0.9
 background = 1f1d30
 
-macos-titlebar-style = hidden
+macos-titlebar-style = transparent
+title = " "
+macos-titlebar-proxy-icon = hidden
+
+quick-terminal-position = center
+keybind = cmd+shift+k=toggle_quick_terminal
+
+window-inherit-working-directory = true
+
+keybind = ctrl+l=goto_split:right
+keybind = ctrl+h=goto_split:left
+
 font-size = 14
 font-family = FiraCode Nerd Font Mono
 

@@ -1,3 +1,6 @@
+-- require("menubar")
+ require("battery")
+
 hs.hotkey.bind("alt", "return", function()
 	hs.application.launchOrFocus("Ghostty")
 end)

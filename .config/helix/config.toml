@@ -1,9 +1,18 @@
-theme = "rose_pine_moon"
+theme = "mytheme"
 
 [editor]
 line-number = "relative"
+default-yank-register = "+"
+end-of-line-diagnostics = "hint"
+auto-format = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[keys.normal]
+"ret" = "goto_word"

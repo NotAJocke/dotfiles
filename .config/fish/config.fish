@@ -7,3 +7,10 @@ set -U fish_cursor_default block
 set fish_cursor_default block
 set fish_cursor_insert line
 set fish_vi_force_cursor 1
+
+# pnpm
+set -gx PNPM_HOME "/Users/jocke/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

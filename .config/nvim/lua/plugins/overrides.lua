@@ -35,20 +35,20 @@ return {
       },
     },
   },
-  {
-    "mrcjkb/rustaceanvim",
-    opts = {
-      server = {
-        default_settings = {
-          ["rust-analyzer"] = {
-            cargo = {
-              targetDir = true,
-            },
-          },
-        },
-      },
-    },
-  },
+  -- {
+  --   "mrcjkb/rustaceanvim",
+  --   opts = {
+  --     server = {
+  --       default_settings = {
+  --         ["rust-analyzer"] = {
+  --           cargo = {
+  --             targetDir = true,
+  --           },
+  --         },
+  --       },
+  --     },
+  --   },
+  -- },
   {
     "ibhagwan/fzf-lua",
     opts = {
