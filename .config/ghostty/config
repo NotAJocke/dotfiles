@@ -12,8 +12,11 @@ keybind = cmd+shift+k=toggle_quick_terminal
 
 window-inherit-working-directory = true
 
-keybind = ctrl+l=goto_split:right
-keybind = ctrl+h=goto_split:left
+keybind = ctrl+shift+l=goto_split:right
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:down
+keybind = ctrl+shift+k=goto_split:up
+
 
 font-size = 14
 font-family = FiraCode Nerd Font Mono
