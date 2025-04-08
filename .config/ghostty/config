@@ -1,6 +1,6 @@
 theme = rose-pine
 background-blur-radius = 8
-background-opacity = 0.9
+background-opacity = 0.95
 background = 1f1d30
 
 macos-titlebar-style = transparent
